@@ -77,7 +77,7 @@ dsh-billing
 
 > 需求:Node.js ≥ 20 + DeepSeek Harness(带 `dsh plugin` 命令,`npm install -g @deepseek-ai/dsh`)。
 
-### 方式一:从 GitHub 安装(发布后)
+### 方式一:从 GitHub 安装
 
 
 
