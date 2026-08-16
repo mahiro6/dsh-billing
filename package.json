@@ -1,0 +1,54 @@
+{
+  "name": "dsh-billing",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness 计费插件:持久化账本精确计费(每次模型调用)、官方余额、预算、今日/本月/累计汇总、会话明细与历史记录、峰谷计价、官方价格同步,界面中英双语。Billing plugin for DeepSeek Harness: persistent ledger with exact per-call cost, official balance, budget, today/month/total summaries, per-session details and history, peak/off-peak pricing, official price sync — bilingual (zh/en).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./typert": {
+      "default": "./lib/typert.host.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/typert.host.js",
+    "lib/store.js",
+    "lib/pricing.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "billing",
+    "cost",
+    "ledger",
+    "token-usage",
+    "budget",
+    "balance"
+  ],
+  "dependencies": {
+    "@deepseek-ai/dsh-credentials": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-home-paths": "^0.1.0-rc.6",
+    "zod": "^4.4.3"
+  },
+  "license": "MIT"
+}

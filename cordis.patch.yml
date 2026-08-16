@@ -1,0 +1,6 @@
+# dsh-billing bundle patch: one host row over the web profile.
+# The row name resolves from the profile's own node_modules where
+# `dsh plugin --profile web add link:<this directory>` installed the package.
+- insert:
+    - id: billing
+      name: dsh-billing
