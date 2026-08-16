@@ -77,7 +77,7 @@ The plugin imports no cordis/dsh Service/Context runtime classes (only Node buil
 
 > Requirements: Node.js ≥ 20 + DeepSeek Harness (a build with the `dsh plugin` command, `npm install -g @deepseek-ai/dsh`).
 
-### From GitHub (after publishing)
+### From GitHub
 
 
 ```sh
